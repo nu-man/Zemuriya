@@ -1,0 +1,95 @@
+1. Responsive Grid Layout (file-2.html)
+This project demonstrates a responsive grid layout using CSS Grid.
+
+Overview
+Grid Container: Utilizes CSS Grid for a multi-column layout.
+Responsive Design:
+Large Screens: Three columns.
+Medium Screens (≤1024px): Two columns.
+Small Screens (≤768px): Single column.
+Usage
+The layout adapts to various screen sizes and can be customized with additional CSS as needed.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Toast Notifications (file-3.html)
+This project demonstrates toast notifications using HTML, CSS, and JavaScript.
+
+Overview
+Toast Container: Positioned at the top-right corner.
+Toast Types: Success (green), Warning (orange), Error (red).
+Transitions: Fade out and slide up before removal.
+Usage
+Buttons: Click to show different toast notifications.
+Function: showToast(type, message) creates and displays notifications.
+CSS
+Defines styles and transitions for different toast types.
+
+JavaScript
+Dynamically creates and manages toast notifications.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+3. Deep Copy Function (file-4.js)
+This project features a JavaScript function org for creating deep copies of objects and arrays.
+
+Overview
+Deep Copy: Recursively copies nested objects and arrays.
+Type Checking: Returns non-object types directly.
+Array/Object Handling: Handles each element or property recursively.
+Usage
+Useful for creating independent copies of complex data structures.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+4. Parallel API Requests (file-5.js)
+This project demonstrates making multiple parallel API requests and handling their results.
+
+Overview
+Payload Array: Contains data for POST requests.
+Endpoint: https://httpbin.org/Anything/ for demonstration.
+Functionality
+Fetch Requests: Sends POST requests with payload data.
+Error Handling: Logs errors and results.
+Promise.allSettled: Processes all requests and handles their outcomes.
+Usage
+Logs success or error messages for each request.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+5. Infinite Scroll Example (file-6.html)
+This project demonstrates infinite scrolling using HTML, CSS, and JavaScript.
+
+Overview
+Content Area: Displays items as the user scrolls.
+Loading Indicator: Shows "Loading..." when fetching new items.
+Functionality
+Initial Load: Displays items on page load.
+Scroll Event: Detects when to load more items.
+Fetch More Items: Loads items in pages, simulating asynchronous data loading.
+Key Features
+Data Simulation: Uses a predefined array.
+Page Management: Loads items in batches.
+Debounced Loading: Simulates data fetching with delays.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6. Retry Mechanism Example (file-7.js)
+This project showcases an asynchronous retry mechanism in JavaScript.
+
+Overview
+asyncRequest: Simulates a request with random success or failure.
+retryRequest: Retries the request with exponential backoff.
+Main Execution: Attempts the request up to 5 times, logging results or errors.
+Key Features
+Exponential Backoff: Delays increase between retries.
+Error Handling: Logs retry attempts and failures.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7. A/B Testing with Next.js
+This project was an attempt to implement A/B testing using Next.js, but it was not completed due to unfamiliarity with the framework.
+
+
+
+
+
+
+
