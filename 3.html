@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Notifications</title>
+    <style>
+        #toast-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+        }
+
+        .toast {
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            color: white;
+            opacity: 0.9;
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        .toast.success {
+            background-color: #4caf50;
+        }
+
+        .toast.warning {
+            background-color: #ff9800;
+        }
+
+        .toast.error {
+            background-color: #f44336;
+        }
+
+        .toast.hide {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+    </style>
+</head>
+<body>
+    <div id="toast-container"></div>
+    <button onclick="showToast('success', 'This is a success message!')">Show Success</button>
+    <button onclick="showToast('warning', 'This is a warning message!')">Show Warning</button>
+    <button onclick="showToast('error', 'This is an error message!')">Show Error</button>
+    <script>
+        (function() {
+            const toastContainer = document.getElementById('toast-container');
+
+            function showToast(type, message) {
+                const toast = document.createElement('div');
+                toast.className = `toast ${type}`;
+                toast.textContent = message;
+
+                toastContainer.appendChild(toast);
+
+                setTimeout(() => {
+                    toast.classList.add('hide');
+                }, 3000);
+
+                setTimeout(() => {
+                    toast.remove();
+                }, 3500);
+            }
+
+            window.showToast = showToast;
+        })();
+    </script>
+</body>
+</html>
